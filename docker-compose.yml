@@ -1,0 +1,6 @@
+services:
+  orderpdf.api:
+    image: ${DOCKER_REGISTRY-}orderpdfapi
+    build:
+      context: .
+      dockerfile: src/OrderPdf.Api/Dockerfile
